@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+  <style>
+
+    /* 개인정보, 지원 분야, 지원동기 볼드체로 변경 */
+    span {
+      font-weight: bold;
+    }
+    /* 목록 표기 제거 */
+    ul {
+      list-style: none;
+    }
+    /* 항목의 높이 변경 */
+    li {
+      line-height: 30px;
+    }
+    /* 개인정보 라벨 크기 변경 */
+    .person {
+      display: inline-block;
+      width: 50px;
+    }
+    fieldset {
+      width: 500px;
+      padding: 20px;
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <form action="">
+
+    <fieldset>
+      <h1>프런트엔드 개발자 지원서</h1>
+      <p>HTML, CSS, JavaScript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</p>
+      <hr>
+      <span>개인정보</span>
+      <ul>
+        <li>
+          <label for="name" class="person">이름</label>
+          <input type="text" id="name"
+          placeholder="공백없이 입력하세요">
+        </li>
+        <li>
+          <label for="phone" class="person">연락처</label>
+          <input type="text" id="phone">
+        </li>
+      </ul>
+      <span>지원 분야</span>
+      <ul>
+        <li>
+          <label for="a">웹 퍼블리싱</label>
+          <input type="radio" id="a" name="area">
+        </li>
+        <li>
+          <label for="b">웹 어플리케이션 개발</label>
+          <input type="radio" id="b" name="area">
+        </li>
+        <li>
+          <label for="c">개발 환경 개선</label>
+          <input type="radio" id="c" name="area">
+        </li>
+      </ul>
+      <span>지원동기</span>
+      <ul>
+      <label for="memo"></label>
+      <textarea id="memo" rows="5" cols="60" 
+      placeholder="본사 지원 동기를 간략히 써주세요"></textarea>
+      </ul>
+
+      <button type="submit">접수하기</button>
+      <button type="reset">다시 쓰기</button>
+
+    </fieldset>
+
+  </form>
+
+</body>
+</html>
