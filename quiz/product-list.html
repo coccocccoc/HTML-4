@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+  <style>
+    table{
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid gray;
+      padding: 10px 20px;
+      text-align: center;
+    }
+    th {
+      background-color: gainsboro;
+    }
+    img{
+      width: 100px;
+      height: 100px;
+    }
+  </style>
+
+</head>
+<body>
+  
+  <h2>쇼핑몰 상품 목록</h2>
+
+  <!-- table: 표 -->
+  <table>
+    <thead>
+      <tr>
+        <!-- th: 제목 셀 -->
+        <th>상품 이미지</th>
+        <th>상품명</th>
+        <th>가격</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <!-- src: 파일 경로, alt: 대체 텍스트 -->
+        <td><img src="../image/생수.jpg" alt="상품1"></td>
+        <!-- a: 링크 -->
+        <!-- href: 상품 상세페이지 URL -->
+        <td><a href="./product-detail-1.html">생수</a></td>
+        <td>1000원</td>
+      </tr>
+      <tr>
+        <td><img src="../image/커피.jpg" alt="상품2"></td>
+        <td><a href="">커피</a></td>
+        <td>19000원</td>
+      </tr>
+      <tr>
+        <td><img src="../image/시리얼.jpg" alt="상품3"></td>
+        <td><a href="">시리얼</a></td>
+        <td>10000원</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
